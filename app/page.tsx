@@ -138,14 +138,26 @@ export default function LandingPage() {
                 </li>
               </ul>
             </div>
-            <div className="rounded-xl bg-secondary/50 h-64 flex items-center justify-center">
-              <DollarSign className="w-24 h-24 text-primary/20" />
+            <div className="relative rounded-xl overflow-hidden shadow-xl">
+              <Image
+                src="/earnings-logger-illustration.jpg"
+                alt="FairGig Earnings Logger"
+                width={600}
+                height={400}
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-            <div className="rounded-xl bg-secondary/50 h-64 flex items-center justify-center order-2 md:order-1">
-              <Shield className="w-24 h-24 text-primary/20" />
+            <div className="relative rounded-xl overflow-hidden shadow-xl order-2 md:order-1">
+              <Image
+                src="/verification-illustration.jpg"
+                alt="FairGig Verification"
+                width={600}
+                height={400}
+                className="w-full h-auto object-cover"
+              />
             </div>
             <div className="space-y-6 order-1 md:order-2">
               <div>
@@ -200,8 +212,14 @@ export default function LandingPage() {
                 </li>
               </ul>
             </div>
-            <div className="rounded-xl bg-secondary/50 h-64 flex items-center justify-center">
-              <Users className="w-24 h-24 text-primary/20" />
+            <div className="relative rounded-xl overflow-hidden shadow-xl">
+              <Image
+                src="/community-grievance-illustration.jpg"
+                alt="FairGig Grievance Board"
+                width={600}
+                height={400}
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
