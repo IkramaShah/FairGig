@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Geist } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
+import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import { AuthProvider } from '@/lib/auth-context'
 import './globals.css'
 
-const _geist = Geist({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'FairGig | Worker Advocacy Platform',
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-background">
-      <body className="font-sans antialiased bg-background text-foreground">
+      <body className={`${inter.className} antialiased bg-background text-foreground`}>
         <AuthProvider>
           {children}
         </AuthProvider>
