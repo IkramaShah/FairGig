@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   description: 'FairGig Advocacy Platform - Track earnings, verify income, and access grievance support for gig workers.',
   icons: {
     icon: '/icon.svg',
-    apple: '/apple-icon.png',
   },
 }
 
