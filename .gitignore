@@ -9,8 +9,20 @@ next.user-config.*
 
 # Environment variables
 .env*.local
+.env
 
 # Common ignores
 node_modules
 .next/
 .DS_Store
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDEs
+.vscode/
+.idea/
