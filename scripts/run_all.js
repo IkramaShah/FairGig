@@ -21,7 +21,7 @@ if (fs.existsSync(envPath)) {
 console.log('Loaded env vars:', Object.keys(envVars));
 
 const services = [
-  { name: 'Frontend', cwd: '.', command: 'npm', args: ['run', 'dev'] },
+  { name: 'Frontend', cwd: '.', command: 'pnpm', args: ['run', 'dev'] },
   { name: 'Auth', cwd: 'backend/services/auth_service', command: 'python', args: ['main.py'] },
   { name: 'Earnings', cwd: 'backend/services/earnings_service', command: 'python', args: ['main.py'] },
   { name: 'Anomaly', cwd: 'backend/services/anomaly_service', command: 'python', args: ['main.py'] },
